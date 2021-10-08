@@ -4,6 +4,59 @@
         <meta charset="utf-8">
     </head>
     <body>
-        
+        <div class="container">
+            <form>
+                <h1 class="main_heading">ADMISSION FORM</h1>
+                <hr>
+                <p>Required Fileds are followed by *</p>
+                <fieldset>
+                    <legend>Student Information</legend>
+                <p>Student Name:* <input type="text" placeholder="Enter your name" name="name" id="name" required></p>
+                <p>Father Name:* <input type="text" placeholder="Father's name" name="father" id="father" required></p>
+                <p>Mother Name:* <input type="text" placeholder="Mother's name" name="mother" id="mother" required></p>
+                <p>
+                    Male <input type="radio" name="Gender" id="Male" required>Female <input type="radio" name="Gender" id="Female" required>Other<input type="radio" name="Gender" id="Other" required>
+                </p>
+                <p>Address:
+                     <textarea name="address" placeholder="Enter your Address" id="address" cols="100" rows="8"></textarea> </p>
+                <p>Email:* <input type="email" placeholder="email@gmail.com" name="email" id="email" required></p>
+                <p>Pincode:* <input type="number" placeholder="12345" name="Pincode" id="Pincode" required></p>
+                <p>College Name:*
+                    <select name="College Name" id="College Name" required>
+                       <option value="">--Select a College--</option>
+                       <option value="Bharati Vidhyapeth">Bharati Vidhyapeth</option>
+                       <option value="AISSMS">AISSMS</option>
+                       <option value="MIT">MIT</option>
+                       <option value="JSPM">JSPM</option>
+                       <option value="PVG">PVG</option>
+                    </select>
+                    </p>
+                <input type="submit" value="Submit"> 
+                <hr> 
+                <input type="submit" value="Reset">
+            </fieldset>
+            </form>
+            <form>
+            <h2>PAYMENT FORM</h2>
+            <fieldset>
+            <legend>Payment Information</legend>
+            <p>Card Type:*
+             <select name="Card Type" id="Card Type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="credit">Credit Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="master Card">Master Card</option>
+             </select>
+            </p>
+            <p>
+                Card Number:* <input type="number" placeholder="1111-2222-3333" name="card_number" id="card_number" required>
+            </p>
+            <p>Expiration Date:* <input type="date" name="exp_date" id="exp_date" required></p>
+            <p>CVV:* <input type="password" placeholder="123" name="CVV" id="CVV" required></p>
+            <input type="submit" value="Pay now">
+            <br>
+            </fieldset>
+            </form>
+            </div>
     </body>
 </html>
